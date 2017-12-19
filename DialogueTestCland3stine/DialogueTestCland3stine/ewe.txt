@@ -1,0 +1,115 @@
+choice none none+"Hullo there..." he rasps, his voice like metal grinding against bone. "And who are you?"
+	choice none <bold>PlayerName</bold>+"PlayerName?" <italic>Ewe repeats your name as though it's a piece of rotting flesh stuck between his teeth.</italic> "What do you want, PlayerName?"
+		end eweTrust <bold>The keycard to the upper decks</bold>+noInfo <bold>Ewe glares down at you, shrugs.</bold>"I don't know where the keycard is. Bugger off."<italic>You sense the thing is hiding something.
+			up
+		end eweNoTrust <bold>The keycard to the upper decks</bold>+info <bold>Ewe looks down at you thoughtfully, scratching the stubble on his chin</bold>"Ask for Queenie."<italic>he croaks, then goes silent. You've gotten what you wanted from him.</italic>
+			up
+		end none <bold>Drugs</bold>+none "Do you even have the money? Come back later, kid."
+			up
+		choice none <bold>"What do you want?"</bold>+<italic>Ewe startles, scratching his head like a philosopher</italic>"Nobody ever asks me."<italic>he grumbles.</italic>"You vying for drugs?"
+			end none <bold>yes</bold>+none "Do you even have the money? Come back later, kid."
+				up
+			end none <bold>no</bold>+none "So, leave if you aren't buying".
+				up
+			choice none <bold>ATTACK</bold>+ATTACK CHOICES
+				end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+					up
+				end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+					up
+				up
+			up
+		up
+	choice none <bold>shrug</bold>+"Mean little freak, aren't you?"<italic>Ewe goes silent.</italic>
+		choice none <bold>PlayerName</bold>+"PlayerName?" <italic>Ewe repeats your name as though it's a piece of rotting flesh stuck between his teeth.</italic> "What do you want, PlayerName?"
+			end eweTrust <bold>The keycard to the upper decks</bold>+noInfo <bold>Ewe glares down at you, shrugs.</bold>"I don't know where the keycard is. Bugger off."<italic>You sense the thing is hiding something.
+				up
+			end eweNoTrust <bold>The keycard to the upper decks</bold>+info <bold>Ewe looks down at you thoughtfully, scratching the stubble on his chin</bold>"Ask for Queenie."<italic>he croaks, then goes silent. You've gotten what you wanted from him.</italic>
+				up
+			end none <bold>Drugs</bold>+none "Do you even have the money? Come back later, kid."
+				up
+			choice none <bold>"What do you want?"</bold>+<italic>Ewe startles, scratching his head like a philosopher</italic>"Nobody ever asks me."<italic>he grumbles.</italic>"You vying for drugs?"
+				end none <bold>yes</bold>+none "Do you even have the money? Come back later, kid."
+					up
+				end none <bold>no</bold>+none "So, leave if you aren't buying".
+					up
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up
+					up
+				up	
+			up
+		end none <bold>leave</bold>+none <italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+			up
+		choice none <bold>glower</bold>+"Are you trying to pick a fight?"
+			choice <bold>grin maliciously</bold>+<italic>Ewe bends down, smelling of rot.</italic>"You wanna die today, freak?"
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up
+					up
+				end none <bold>leave</bold>+none <italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+					up
+				end none <bold>Knock out non-lethally</bold>+eweNoTrust <italic>A quick jab to the place where neck and shoulder meet and he falls. Asleep, he almost looks peaceful. He will not trust you if he remembers this...</italic>
+					up
+				up
+			choice none <bold>yes</bold>+<italic>Ewe bends down, smelling of rot.</italic>"You wanna die today, freak?"
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up
+					up
+				end none <bold>leave</bold>+none <italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+					up
+				end none <bold>Knock out non-lethally</bold>+eweNoTrust <italic>A quick jab to the place where neck and shoulder meet and he falls. Asleep, he almost looks peaceful. He will not trust you if he remembers this...</italic>
+					up
+				up
+			end none <bold>No</bold>+none "Bugger off, then!"<italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+				up
+			up
+		up	
+	choice none <bold>glower back</bold>+"Mean little freak, aren't you?"<italic>Ewe goes silent.</italic>
+		choice none <bold>PlayerName</bold>+"PlayerName?" <italic>Ewe repeats your name as though it's a piece of rotting flesh stuck between his teeth.</italic> "What do you want, PlayerName?"
+			end eweTrust <bold>The keycard to the upper decks</bold>+noInfo <bold>Ewe glares down at you, shrugs.</bold>"I don't know where the keycard is. Bugger off."<italic>You sense the thing is hiding something.
+				up
+			end eweNoTrust <bold>The keycard to the upper decks</bold>+info <bold>Ewe looks down at you thoughtfully, scratching the stubble on his chin</bold>"Ask for Queenie."<italic>he croaks, then goes silent. You've gotten what you wanted from him.</italic>
+				up
+			end none <bold>Drugs</bold>+none "Do you even have the money? Come back later, kid."
+				up
+			choice none <bold>"What do you want?"</bold>+<italic>Ewe startles, scratching his head like a philosopher</italic>"Nobody ever asks me."<italic>he grumbles.</italic>"You vying for drugs?"
+				end none <bold>yes</bold>+none "Do you even have the money? Come back later, kid."
+					up
+				end none <bold>no</bold>+none "So, leave if you aren't buying".
+					up
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up
+					up
+				up	
+			up
+		end none <bold>leave</bold>+none <italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+			up
+		choice none <bold>glower</bold>+"Are you trying to pick a fight?"
+			choice <bold>grin maliciously</bold>+<italic>Ewe bends down, smelling of rot.</italic>"You wanna die today, freak?"
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up
+					up
+				end none <bold>leave</bold>+none <italic>You return to the slums. Steam hisses above you. Voices in the dark. A black market belowdecks.</italic>
+					up
+				end none <bold>Knock out non-lethally</bold>+eweNoTrust <italic>A quick jab to the place where neck and shoulder meet and he falls. Asleep, he almost looks peaceful. He will not trust you if he remembers this...</italic>
+					up
+				up
+			choice none <bold>yes</bold>+<italic>Ewe bends down, smelling of rot.</italic>"You wanna die today, freak?"
+				choice none <bold>ATTACK</bold>+ATTACK CHOICES
+					end none <bold>Brutal</bold>+eweDead <italic>You bash Ewe's face into the fround. A bottle falls from his pocket. You pick up the shard.</italic>
+						up
+					end none <bold>Elegant</bold>+eweDead <italic>Ewe's blood sprays in glittering ruby arcs as you slice into his skin with all the finesse your spymaster father taught you</italic>
+						up

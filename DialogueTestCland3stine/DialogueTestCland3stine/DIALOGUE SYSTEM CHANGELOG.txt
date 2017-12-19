@@ -1,0 +1,19 @@
+DIALOGUE SYSTEM CHANGELOG
+
+9/21/17
+clearButtonSpace to wipe all buttons before moving on to next dialogue branch
+microsoft is a bunch of liars and say that ElementAt is a method for LinkedList
+parse int
+dialogue not quite responsive yet, but we can move through the tree
+
+9/20/17
+Issue of not-spawning things is thanks to HashSet being weird in C#.
+Changed HashSet to List.
+Prompt text now shows, centered.
+
+
+BEFORE THE BIRTH OF THE CHANGELOG
+"Open menu" spawns buttons, clicking works, proving that the delegate method for calling things when clicked is indeed a thing
+TO-DO:
+show all buttons. Only first button currently shows.
+Also show prompt text.
