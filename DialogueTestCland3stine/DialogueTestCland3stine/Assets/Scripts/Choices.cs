@@ -18,7 +18,6 @@ public class Choices: MonoBehaviour, TreeNode {
     private string choiceText;
     private string needed;
     private Text dialogueText;
-    private InputField inField;
     private GameObject ButtonPrefab;
     private GameObject background;
     private Text promptText;
@@ -59,6 +58,8 @@ public class Choices: MonoBehaviour, TreeNode {
         }
         //Console version, graphic version will obviously be different
 
+        //JH: Set text for prompt, then add each of the choice buttons
+        
         //Scanner in = new Scanner(System.in); //User input for console version
         //System.out.println(getText());
         promptText.text = getText();
@@ -114,11 +115,16 @@ public class Choices: MonoBehaviour, TreeNode {
         return choiceText;
     }
 
+    //JH: Set up the buttons that the player will click to indicate their
+    //dialogue choices
     public void makeButton(string label, LinkedList<TreeNode> nodes, int num)
     {
-        GameObject button;
-        DialogueChoiceButtonInit dc;
-        Vector3 posVect;
+        GameObject button; //the object
+        DialogueChoiceButtonInit dc; //dialogue choice script object
+        Vector3 posVect; //position of this button
+        
+        //Instantiate the button, add a DialogueChoiceButtonInit to it,
+        //set the text, then add a click listener
         button = Instantiate(ButtonPrefab);
         background.SetActive(true);
         button.transform.SetParent(background.transform);

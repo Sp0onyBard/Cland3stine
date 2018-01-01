@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\ListenToMe.cs" />
     <Compile Include="Assets\Scripts\ModalPanel.cs" />
     <Compile Include="Assets\Scripts\NPCDialogueControl.cs" />
+    <Compile Include="Assets\Scripts\NPCTrust.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Statics.cs" />

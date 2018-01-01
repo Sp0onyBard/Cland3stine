@@ -14,15 +14,21 @@ public class DialogueChoiceButtonInit : MonoBehaviour {
 
     public void Proceed()
     {
+        //gets the node this choice corresponds to and runs it
         Text choiceText;
         string[] splitText;
         char[] delimiters = { ':' };
         //Debug.Log("Clicking worked");
         choiceText = gameObject.GetComponentInChildren<Text>();
         splitText = choiceText.text.Split(delimiters);
-        Debug.Log(splitText[0]);
+        //Debug.Log(splitText[0]);
         TreeNode toRun = getNodey(int.Parse(splitText[0]));
         toRun.run();
+    }
+
+    public void Exit(GameObject bg)
+    {
+        bg.SetActive(false);
     }
 
     public void setNext(LinkedList<TreeNode> listNext)

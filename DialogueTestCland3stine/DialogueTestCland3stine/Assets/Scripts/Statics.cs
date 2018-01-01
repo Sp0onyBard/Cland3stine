@@ -48,7 +48,7 @@ public class Statics : MonoBehaviour {
             case ("choice"):
                 return new Choices(info[1], info[2], iField, promptText, background);
             case ("end"):
-                return new End(info[1], info[2], promptText, background);
+                return new End(info[1], info[2], iField, promptText, background);
             default: //There was a problem with the first word
                 Debug.Log(info[0] + " given as a nodeType. Incorrect.");
                 return null;
